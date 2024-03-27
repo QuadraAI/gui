@@ -13,9 +13,10 @@ async function greet() {
 </script>
 
 <template>
-  <form class="row" @submit.prevent="greet">
-    <input id="greet-input" v-model="username" placeholder="Username" />
-    <input id="greet-input" v-model="password" placeholder="Password" />
+  <form class="row login-form" @submit.prevent="greet">
+    <h2>Welcome back 👋</h2>
+    <input class="greet-input" v-model="username" placeholder="Username" />
+    <input class="greet-input" v-model="password" placeholder="Password" />
     <button id="submit-button" type="submit">Sign in</button>
   </form>
 

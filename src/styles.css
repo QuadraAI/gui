@@ -16,10 +16,9 @@
 
 .container {
   margin: 0;
-  padding-top: 10vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -41,7 +40,20 @@
 
 #submit-button {
   background-color: blueviolet;
-  color: whitesmoke;
+  color: white;
+  margin-top: 16px;
+}
+
+.login-form {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: white;
+  flex-direction: column;
+  text-align: left;
+  width: 30%;
+  border-radius: 15px;
 }
 
 a {
@@ -89,8 +101,9 @@ button {
   outline: none;
 }
 
-#greet-input {
-  margin-right: 5px;
+.greet-input {
+  margin-bottom: 5px;
+  margin-top: 4px;
 }
 
 @media (prefers-color-scheme: dark) {
