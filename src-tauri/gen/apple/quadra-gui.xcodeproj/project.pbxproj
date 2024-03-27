@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06ABEC50B0448F266324AD48 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 52827242EBB755EA23E37703 /* assets */; };
+		2D2A956BC82FB4F185D6F355 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269FD72B00A5761EDEAC437C /* UIKit.framework */; };
+		44952DF256E0A5175DD1D705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575D54573BA61E83B442CE83 /* Assets.xcassets */; };
+		57D97115E5C28C5E6A10E741 /* libquadra_gui_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA30914CAB515D4B3DB9A58 /* libquadra_gui_lib.a */; };
+		641DAFBDDC74F4770077F8DA /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBC6753FFA765692814F7E45 /* main.mm */; };
+		92D8312610476BAAE3C0135E /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5B57D0D82E2222DCBD2BBD /* MetalKit.framework */; };
+		CBFDBAC0DD0BC66A59F14854 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6416E8C16F3A7B0851D3C74 /* QuartzCore.framework */; };
+		D95C68FABF9FB9F857D13313 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0D401F865B9C0A33447D16C /* Metal.framework */; };
+		E0D37310023B4E07F786B78C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054257CC339B42C33457EC6F /* Security.framework */; };
+		F0D6AC0174600DCF5CBBD190 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B84B052CC7BC1D9F6675C9F /* CoreGraphics.framework */; };
+		F0E440DB6942CD9239DFE470 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5348C0D4B5F5DCCA5FEAE5B8 /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		054257CC339B42C33457EC6F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1E8FC143AE7D95E8E3FF6FAD /* quadra-gui_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "quadra-gui_iOS.entitlements"; sourceTree = "<group>"; };
+		237244E5C23F616ADAB2169C /* main.rs */ = {isa = PBXFileReference; path = main.rs; sourceTree = "<group>"; };
+		269FD72B00A5761EDEAC437C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2AA30914CAB515D4B3DB9A58 /* libquadra_gui_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libquadra_gui_lib.a; sourceTree = "<group>"; };
+		2B23573A14EB40C314D169B9 /* quadra-gui_iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "quadra-gui_iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52827242EBB755EA23E37703 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		5348C0D4B5F5DCCA5FEAE5B8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		575D54573BA61E83B442CE83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B84B052CC7BC1D9F6675C9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65449166891F618FC0649510 /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
+		A6416E8C16F3A7B0851D3C74 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D51411BC882F399CF53CDAC2 /* lib.rs */ = {isa = PBXFileReference; path = lib.rs; sourceTree = "<group>"; };
+		DC5B57D0D82E2222DCBD2BBD /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		E0D401F865B9C0A33447D16C /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		EBC6753FFA765692814F7E45 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		F986DDD201E0485EBF4D3E40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0D76E6A74427E321C16E4F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57D97115E5C28C5E6A10E741 /* libquadra_gui_lib.a in Frameworks */,
+				F0D6AC0174600DCF5CBBD190 /* CoreGraphics.framework in Frameworks */,
+				D95C68FABF9FB9F857D13313 /* Metal.framework in Frameworks */,
+				92D8312610476BAAE3C0135E /* MetalKit.framework in Frameworks */,
+				CBFDBAC0DD0BC66A59F14854 /* QuartzCore.framework in Frameworks */,
+				E0D37310023B4E07F786B78C /* Security.framework in Frameworks */,
+				2D2A956BC82FB4F185D6F355 /* UIKit.framework in Frameworks */,
+				F0E440DB6942CD9239DFE470 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A9256A8932F5D1D6B1FC18E /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		75048B103855C1154970B348 /* quadra-gui_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F986DDD201E0485EBF4D3E40 /* Info.plist */,
+				1E8FC143AE7D95E8E3FF6FAD /* quadra-gui_iOS.entitlements */,
+			);
+			path = "quadra-gui_iOS";
+			sourceTree = "<group>";
+		};
+		878A0987ED65DC317F484429 = {
+			isa = PBXGroup;
+			children = (
+				52827242EBB755EA23E37703 /* assets */,
+				575D54573BA61E83B442CE83 /* Assets.xcassets */,
+				1A9256A8932F5D1D6B1FC18E /* Externals */,
+				75048B103855C1154970B348 /* quadra-gui_iOS */,
+				EC2B5F687E1BCB2B6838443A /* Sources */,
+				D83791253C2034EE5754E857 /* src */,
+				FD957D5089817F9B74E439A9 /* Frameworks */,
+				FE55F38FA54BA1C3500E114D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF00B6FEC635C17984CA2112 /* quadra-gui */ = {
+			isa = PBXGroup;
+			children = (
+				EBC6753FFA765692814F7E45 /* main.mm */,
+				CDB59FC65FF37F9CA04F1384 /* bindings */,
+			);
+			path = "quadra-gui";
+			sourceTree = "<group>";
+		};
+		CDB59FC65FF37F9CA04F1384 /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				65449166891F618FC0649510 /* bindings.h */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+		D83791253C2034EE5754E857 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D51411BC882F399CF53CDAC2 /* lib.rs */,
+				237244E5C23F616ADAB2169C /* main.rs */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		EC2B5F687E1BCB2B6838443A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AF00B6FEC635C17984CA2112 /* quadra-gui */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FD957D5089817F9B74E439A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B84B052CC7BC1D9F6675C9F /* CoreGraphics.framework */,
+				2AA30914CAB515D4B3DB9A58 /* libquadra_gui_lib.a */,
+				E0D401F865B9C0A33447D16C /* Metal.framework */,
+				DC5B57D0D82E2222DCBD2BBD /* MetalKit.framework */,
+				A6416E8C16F3A7B0851D3C74 /* QuartzCore.framework */,
+				054257CC339B42C33457EC6F /* Security.framework */,
+				269FD72B00A5761EDEAC437C /* UIKit.framework */,
+				5348C0D4B5F5DCCA5FEAE5B8 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE55F38FA54BA1C3500E114D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B23573A14EB40C314D169B9 /* quadra-gui_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B68A44660BDB7F5600972B9D /* quadra-gui_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFF9BB070B986F477CADCBE9 /* Build configuration list for PBXNativeTarget "quadra-gui_iOS" */;
+			buildPhases = (
+				5D4204FA71457E358D3D74E0 /* Build Rust Code */,
+				5E4B6A6A855BC5D38F495872 /* Sources */,
+				9E185EC9543289AA3F2CDE58 /* Resources */,
+				A0D76E6A74427E321C16E4F4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "quadra-gui_iOS";
+			productName = "quadra-gui_iOS";
+			productReference = 2B23573A14EB40C314D169B9 /* quadra-gui_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		177E4F695D2140B8801B8ED9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 320C016A1069B1C51546D915 /* Build configuration list for PBXProject "quadra-gui" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 878A0987ED65DC317F484429;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B68A44660BDB7F5600972B9D /* quadra-gui_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E185EC9543289AA3F2CDE58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44952DF256E0A5175DD1D705 /* Assets.xcassets in Resources */,
+				06ABEC50B0448F266324AD48 /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D4204FA71457E358D3D74E0 /* Build Rust Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/target/aarch64-apple-ios/${CONFIGURATION}/deps/libquadra_gui_lib.a",
+				"$(SRCROOT)/target/x86_64-apple-ios/${CONFIGURATION}/deps/libquadra_gui_lib.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bun tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E4B6A6A855BC5D38F495872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				641DAFBDDC74F4770077F8DA /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		07901694DF97917491682568 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "quadra-gui_iOS/quadra-gui_iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "quadra-gui_iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tauri.quadra-gui";
+				PRODUCT_NAME = "quadra-gui";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = debug;
+		};
+		10F08ABE088FCE41566E1306 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+					"arm64-sim",
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "quadra-gui_iOS/quadra-gui_iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = "arm64-sim x86_64";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "quadra-gui_iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64-sim]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64-sim/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME) $(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tauri.quadra-gui";
+				PRODUCT_NAME = "quadra-gui";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64  arm64-sim";
+			};
+			name = release;
+		};
+		17F5ABE50BE655FAF14247BE /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = release;
+		};
+		F77F9286B9E2BF8734D0551B /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		320C016A1069B1C51546D915 /* Build configuration list for PBXProject "quadra-gui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F77F9286B9E2BF8734D0551B /* debug */,
+				17F5ABE50BE655FAF14247BE /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		EFF9BB070B986F477CADCBE9 /* Build configuration list for PBXNativeTarget "quadra-gui_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07901694DF97917491682568 /* debug */,
+				10F08ABE088FCE41566E1306 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 177E4F695D2140B8801B8ED9 /* Project object */;
+}
