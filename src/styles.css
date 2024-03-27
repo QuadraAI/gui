@@ -18,8 +18,6 @@ html, body {
 }
 
 .container {
-  background-image: url('https://source.unsplash.com/random/1920x1080/?landscape');
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,26 +29,6 @@ html, body {
 .row {
   display: flex;
   justify-content: center;
-}
-
-.submit-button {
-  background-color: blueviolet;
-  color: white;
-  margin-top: 16px;
-}
-
-.login-form {
-  padding: 30px 18px;
-  background-color: white;
-  flex-direction: column;
-  text-align: left;
-  width: 90%;
-  max-width: 374px;
-  max-height: 287px;
-  border-radius: 15px;
-  box-shadow: 0 2px 13px rgba(0, 0, 0, 0.1);
-  display: flex;
-  margin: 0;
 }
 
 a {
@@ -90,18 +68,13 @@ button:hover {
 }
 
 button:active {
-  border-color: #396cd8;
-  background-color: #e8e8e8;
+  border-color: blueviolet;
+  background-color: rgb(115, 36, 188);
 }
 
 input,
 button {
   outline: none;
-}
-
-.signin-input {
-  margin-bottom: 5px;
-  margin-top: 4px;
 }
 
 @media (prefers-color-scheme: dark) {

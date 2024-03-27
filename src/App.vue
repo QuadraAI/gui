@@ -5,7 +5,14 @@ import SignIn from "./components/SignIn.vue";
 </script>
 
 <template>
-  <div class="container">
+  <div class="container login-background">
     <SignIn />
   </div>
 </template>
+
+<style>
+.login-background {
+  background-image: url('https://source.unsplash.com/random/1920x1080/?landscape');
+  background-size: cover;
+}
+</style>
