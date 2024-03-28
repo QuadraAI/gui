@@ -12,6 +12,8 @@ const pushToHome = () => router.push('/');
 const loginAndRedirect = async () => {
     const loginSuccess = await tryLogin(username.value, password.value);
     if (loginSuccess) {
+        username.value = "";
+        password.value = "";
         pushToHome();
     }
 };
