@@ -16,9 +16,9 @@ const password = ref("");
         <h1>Quadra</h1>
         <form class="login-form" @submit.prevent="pushToHome">
             <label class="signin-label" for="username">Username</label>
-            <input class="signin-input" v-model="username" name="username" placeholder="Joe" />
+            <input class="signin-input" v-model.lazy="username" name="username" placeholder="Joe" />
             <label class="signin-label" for="password">Password</label>
-            <input class="signin-input" type="password" v-model="password" name="password" placeholder="•••••••••" />
+            <input class="signin-input" type="password" v-model.lazy="password" name="password" placeholder="•••••••••" />
             <button class="submit-button" type="submit">Sign in</button>
         </form>
     </div>
