@@ -55,7 +55,7 @@ const password = ref("");
   max-width: 450px;
   max-height: 310px;
   border-radius: 15px;
-  box-shadow: 0 2px 13px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
   display: flex;
   margin: 0;
 }

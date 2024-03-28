@@ -64,7 +64,7 @@ input {
 }
 
 input:focus {
-  border-color: blueviolet;
+  border-color: rgb(99, 0, 141);
 }
 
 button {
@@ -73,7 +73,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(120, 24, 210);
+  background-color: rgb(146, 47, 239);
 }
 
 button:active {
