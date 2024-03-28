@@ -21,7 +21,8 @@ async function tryLogin(username, password) {
     const response = await fetch(url, requestOptions)
         .then(response => {
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                const errorMessage = await response.text();
+                throw new Error(`Failed to log in: ${errorMessage}`);
             }
             return response.json();
         })
