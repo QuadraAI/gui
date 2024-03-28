@@ -56,19 +56,27 @@ button {
   color: #0f0f0f;
   background-color: #ffffff;
   transition: border-color 0.25s;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  border: 2px solid rgb(228, 211, 211);
+  background-color: white;
+}
+
+input:focus {
+  border-color: blueviolet;
 }
 
 button {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
 button:hover {
-  border-color: #396cd8;
+  background-color: rgb(120, 24, 210);
 }
 
 button:active {
-  border-color: blueviolet;
   background-color: rgb(115, 36, 188);
 }
 
