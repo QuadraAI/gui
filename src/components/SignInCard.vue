@@ -1,19 +1,28 @@
 <script setup>
 import { ref } from "vue";
-import { useRouter } from 'vue-router'
+import { tryLogin } from "../services/auth.js";
+import { useRouter } from 'vue-router';
+
+const username = ref("");
+const password = ref("");
 
 const router = useRouter();
 const pushToHome = () => router.push('/');
 
-const username = ref("");
-const password = ref("");
+const loginAndRedirect = async () => {
+    const loginSuccess = await tryLogin(username.value, password.value);
+    if (loginSuccess) {
+        pushToHome();
+    }
+};
+
 </script>
 
 
 <template>
     <div class="login-card">
         <h1>Quadra</h1>
-        <form class="login-form" @submit.prevent="pushToHome">
+        <form class="login-form" @submit.prevent="loginAndRedirect">
             <label class="signin-label" for="username">Username</label>
             <input class="signin-input" v-model.lazy="username" name="username" placeholder="Joe" />
 
