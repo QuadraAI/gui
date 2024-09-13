@@ -1,6 +1,6 @@
 {
   "productName": "quadra-gui",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "identifier": "com.quadra.dev",
   "build": {
     "beforeDevCommand": "bun run dev",
@@ -12,8 +12,8 @@
     "windows": [
       {
         "title": "quadra-gui",
-        "width": 960,
-        "height": 720
+        "width": 800,
+        "height": 600
       }
     ],
     "security": {
