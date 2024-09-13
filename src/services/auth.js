@@ -1,8 +1,7 @@
-/** @module quadra/authenticator */
-//I've no idea what this does but it looks nice, will look into jsdoc more later
-
-/** The name of the module. */
-export const name = authenticator
+/**
+ * @module auth
+ * Handles everything related to authentication and connection to the backend
+*/
 
 import { useAuthStore } from '../stores/authStore.js';
 import { useConfigStore } from '../stores/configStore.js';
@@ -17,7 +16,7 @@ if (!getActivePinia()) {
  * Try to authenticate the user and retrieve the bearer token.
  * @param {string} username - The username of the user.
  * @param {string} password - The password of the user.
- * @returns {bool}
+ * @returns {bool} `true` if the bearer has been retrieved, else `false`.
  */
 async function tryLogin(username, password) {
     const configStore = useConfigStore();
