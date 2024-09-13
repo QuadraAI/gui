@@ -2,8 +2,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from './views/Home.vue'
 import Login from './views/Login.vue'
+import { useAuthStore } from './stores/authStore.js';
 
-const X = true // will replace with a check_session() on backend
+const authStore = useAuthStore();
 
 const routes = [
     {
@@ -18,7 +19,7 @@ const routes = [
     },
     {
         path: '/',
-        redirect: () => X ? { name: 'Home' } : { name: 'Login' }
+        redirect: () => authStore.isAuthenticated ?   { name: 'Home' } : { name: 'Login' }
     }
 ]
 
