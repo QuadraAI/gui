@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
-import { tryLogin } from "../services/auth.js";
-import { useRouter } from 'vue-router';
+import { tryLogin } from "../services/auth";
+import { useRouter } from "vue-router";
 
 const username = ref("");
 const password = ref("");
@@ -17,13 +17,11 @@ const loginAndRedirect = async () => {
         pushToHome();
     }
 };
-
 </script>
 
 
 <template>
     <div class="login-card">
-        <h1>Quadra</h1>
         <form class="login-form" @submit.prevent="loginAndRedirect">
             <label class="signin-label" for="username">Username</label>
             <input class="signin-input" v-model.lazy="username" name="username" placeholder="Joe" />
@@ -38,11 +36,11 @@ const loginAndRedirect = async () => {
 </template>
 
 
-<style>
+<style scoped>
+
 .signin-label {
-    padding-left: 5px;
     font-size: medium;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .signin-input {
@@ -51,9 +49,18 @@ const loginAndRedirect = async () => {
 }
 
 .submit-button {
-    background-color: blueviolet;
+    background-color: #a855f7;
     color: white;
     margin-top: 16px;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: #c084fc;
+}
+
+button:active {
+    background-color: #9333ea;
 }
 
 .login-form {
@@ -64,18 +71,18 @@ const loginAndRedirect = async () => {
 }
 
 .login-card {
-    padding: 18px;
-    background-color: whitesmoke;
-    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #f8fafc;
     justify-content: center;
-    text-align: center;
     width: 100%;
-    height: 100%;
-    max-width: 450px;
-    max-height: 310px;
+    height: fit-content;
+    max-width: 280px;
+    max-height: 340px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.04);
     border-radius: 15px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-    display: flex;
-    margin: 0;
+    border: black;
+    border: 8px solid white;
+    margin-top: 12px;
 }
 </style>
