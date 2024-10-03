@@ -4,7 +4,7 @@ export const useConfigStore = defineStore('config', {
   state: () => ({
     firstLaunch: true,
     coreUrl: null,
-    DEFAULT_URL: "http://localhost:5000",
+    DEFAULT_URL: "http://0.0.0.0:5000",
   }),
   actions: {
     firstLaunchConfigDone() { this.firstLaunch = false },
