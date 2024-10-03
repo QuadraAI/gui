@@ -37,7 +37,6 @@ const loginAndRedirect = async () => {
 
 
 <style scoped>
-
 .signin-label {
     font-size: medium;
     font-weight: 400;
