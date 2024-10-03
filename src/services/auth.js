@@ -56,6 +56,29 @@ async function tryLogin(username, password) {
     return response;
 }
 
+/**
+ * Try to ping Core at http://0.0.0.0:5000
+ * @returns {boolean}
+ */
+async function pingLocalServer() {
+    const configStore = useConfigStore();
+
+    return await fetch(configStore.DEFAULT_URL, { method: "GET" })
+        .then(response => response.ok)
+}
+
+/**
+ * Try to ping Core at the url specified
+ * @param {string} url - The url where Core is located
+ * @returns {boolean}
+ */
+async function tryPingServer(url) {
+    return await fetch(url, { method: "GET" })
+        .then(response => response.ok)
+}
+
 export {
-    tryLogin
+    tryLogin,
+    pingLocalServer,
+    tryPingServer
 };
