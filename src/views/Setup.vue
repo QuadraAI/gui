@@ -1,5 +1,10 @@
 <script setup>
-const isLocal = ref(null);
+import { ref } from 'vue';
+import WhereIsCore from "../components/Setup/WhereIsCore.vue";
+import AskLocalPort from "../components/Setup/AskLocalPort.vue";
+import AskServerUrl from "../components/Setup/AskServerUrl.vue";
+
+const isLocal = ref(undefined);
 </script>
 
 <template>
@@ -8,9 +13,9 @@ const isLocal = ref(null);
     <div class="container login-background">
         <img src="/quadra-logo-small-backgroundless.webp" alt="Quadra logo backgroundless" />
         <h1>First time here ?</h1>
-        <div v-if="isLocal.value === null"></div>
-        <div v-else-if="isLocal.value === true"></div>
-        <div v-else-if="isLocal.value === false"></div>
+        <WhereIsCore v-if="isLocal === undefined" v-model:isLocal="isLocal" />
+        <AskLocalPort v-else-if="isLocal === true" />
+        <AskServerUrl v-else-if="isLocal === false" />
     </div>
 </template>
 
