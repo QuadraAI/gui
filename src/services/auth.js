@@ -6,11 +6,6 @@
 import { useAuthStore } from '../stores/authStore.js';
 import { useConfigStore } from '../stores/configStore.js';
 import { useErrorStore } from '../stores/errorStore.js';
-import { getActivePinia, setActivePinia, createPinia } from 'pinia';
-
-if (!getActivePinia()) {
-    setActivePinia(createPinia());
-}
 
 /**
  * Try to authenticate the user and retrieve the bearer token.

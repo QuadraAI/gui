@@ -1,13 +1,23 @@
 import { createApp } from "vue";
-import { createPinia } from 'pinia';
+import { getActivePinia, setActivePinia, createPinia } from 'pinia';
 
 import "./styles.css";
 import App from "./App.vue";
 
 import router from './router';
 
-createApp(App)
-    .use(router)
-    .use(createPinia())
-    .mount('#app')
+function ensureActivePinia() {
+    if (!getActivePinia()) {
+        setActivePinia(createPinia());
+    }
+    return getActivePinia();
+}
+
+const application = createApp(App);
+const pinia = ensureActivePinia();
+
+application.use(router)
+    .use(pinia)
+    .mount('#app');
+
 
