@@ -1,11 +1,13 @@
 <script setup>
 import { ref } from 'vue';
 
-const url = ref()
+/** Port where Core is listening */
+const port = ref();
+
 </script>
 
 <template>
-    <input type="text" id="port" v-model.lazy="port" placeholder="5000" />
+    <input type="text" id="port" v-model.number="port" placeholder="5000" />
     <label for="port">Insert port used</label>
     <button>Confirm</button>
 </template>

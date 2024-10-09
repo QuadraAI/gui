@@ -3,8 +3,13 @@ import { ref } from 'vue';
 import WhereIsCore from "../components/Setup/WhereIsCore.vue";
 import AskLocalPort from "../components/Setup/AskLocalPort.vue";
 import AskServerUrl from "../components/Setup/AskServerUrl.vue";
+import ChangeAdminInfos from '../components/Setup/ChangeAdminInfos.vue';
 
+/** Define if Core is running locally or not */
 const isLocal = ref(undefined);
+
+/** Define if the current user is the first to connect to Core instance */
+const isFirstUser = true;
 </script>
 
 <template>
@@ -16,6 +21,7 @@ const isLocal = ref(undefined);
         <WhereIsCore v-if="isLocal === undefined" v-model:isLocal="isLocal" />
         <AskLocalPort v-else-if="isLocal === true" />
         <AskServerUrl v-else-if="isLocal === false" />
+        <ChangeAdminInfos v-else-if="isFirstUser === false" />
     </div>
 </template>
 
