@@ -15,13 +15,14 @@ import { useErrorStore } from '../stores/errorStore.js';
  */
 async function tryLogin(username, password) {
     const configStore = useConfigStore();
-    const errorStore = useErrorStore();
+    // const errorStore = useErrorStore();
     const url = `${configStore.coreUrl ?? configStore.DEFAULT_URL}/api/auth/login`;
 
-    const myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
+    const myHeaders = new Headers({
+        "Content-Type": "application/json",
+    });
 
-    const raw = JSON.stringify({
+    const body = JSON.stringify({
         "username": username,
         "password": password
     });
@@ -29,13 +30,13 @@ async function tryLogin(username, password) {
     const requestOptions = {
         method: "POST",
         headers: myHeaders,
-        body: raw,
+        body: body,
         redirect: "follow"
     };
 
-    const response = await fetch(url, requestOptions)
+    return await fetch(url, requestOptions)
         .then(async response => {
-            if (!response.ok) {
+            if (response.ok === false) {
                 const errorMessage = await response.text();
                 throw new Error(`Failed to log in: ${errorMessage}`);
             }
@@ -48,12 +49,10 @@ async function tryLogin(username, password) {
         })
         .catch((error) => {
             console.error(error);
-            errorStore.setError("Invalid username or password");
-            console.error(errorStore.message);
+            // errorStore.setError("Invalid username or password");
+            // console.error(errorStore.message);
             return false;
         });
-
-    return response;
 }
 
 /**
