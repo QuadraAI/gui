@@ -12,7 +12,7 @@ import { useConfigStore } from '../stores/configStore.js';
  * @param {string} newPass The new password for the user.
  * @returns {boolean} `true` if the password has been changed.
  */
-async function ChangePassword(oldPass, newPass) {
+async function changePassword(oldPass, newPass) {
     const configStore = useConfigStore();
     const authStore = useAuthStore();
     const url = `${configStore.coreUrl ?? configStore.DEFAULT_URL}/api/user/password`;
@@ -39,5 +39,5 @@ async function ChangePassword(oldPass, newPass) {
 }
 
 export {
-    ChangePassword,
+    changePassword,
 };
