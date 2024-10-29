@@ -24,7 +24,7 @@ const loginAndRedirect = async () => {
     <div class="login-card">
         <form class="login-form" @submit.prevent="loginAndRedirect">
             <label class="signin-label" for="username">Username</label>
-            <input class="signin-input" v-model.lazy="username" name="username" placeholder="Joe" />
+            <input class="signin-input" v-model.lazy.trim="username" name="username" placeholder="Joe" />
 
             <label class="signin-label" for="password">Password</label>
             <input class="signin-input" type="password" v-model.lazy="password" name="password"
