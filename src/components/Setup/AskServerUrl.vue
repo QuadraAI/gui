@@ -1,9 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-
-/** Port where Core is listening */
 const port = ref();
-
 </script>
 
 <template>
