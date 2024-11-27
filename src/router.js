@@ -25,7 +25,10 @@ router.beforeEach((to, from, next) => {
     if (configStore.firstLaunch == true && to.name !== "Setup") {
         next({ name: 'Setup' });
     }
-    if (!authStore.isAuthenticated && to.name !== 'Login' && to.name !== 'Setup') {
+    if (authStore.isAuthenticated === false
+        && to.name !== 'Login'
+        && to.name !== 'Setup'
+    ) {
         return next({ name: 'Login' });
     }
     next();
