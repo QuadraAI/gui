@@ -1,11 +1,10 @@
 /**
  * @module auth
- * Handles everything related to authentication and connection to the backend
+ * Handles everything related to authentication and connection to the backend.
 */
 
 import { useAuthStore } from '../stores/authStore.js';
 import { useConfigStore } from '../stores/configStore.js';
-import { useErrorStore } from '../stores/errorStore.js';
 
 /**
  * Try to authenticate the user and retrieve the bearer token.
@@ -15,7 +14,6 @@ import { useErrorStore } from '../stores/errorStore.js';
  */
 async function tryLogin(username, password) {
     const configStore = useConfigStore();
-    // const errorStore = useErrorStore();
     const url = `${configStore.coreUrl ?? configStore.DEFAULT_URL}/api/auth/login`;
 
     const myHeaders = new Headers({
@@ -49,8 +47,6 @@ async function tryLogin(username, password) {
         })
         .catch((error) => {
             console.error(error);
-            // errorStore.setError("Invalid username or password");
-            // console.error(errorStore.message);
             return false;
         });
 }
