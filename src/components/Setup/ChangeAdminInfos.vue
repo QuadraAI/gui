@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import { tryLogin } from '../../services/auth';
 import { changePassword } from '../../services/user';
 import { useRouter } from "vue-router";
+import { completeSetup } from '../../services/setup';
 
 const router = useRouter();
 const pushToHome = () => router.push('/');
@@ -43,6 +44,7 @@ const checkPassword = () => {
         && passwordMatch.value;
 };
 
+// todo: add license checking
 const checkLicense = async () => {
     licenseError.value = "";
     if (false) {
@@ -65,6 +67,7 @@ const changeAdminPassword = async () => {
     if (loginNewPass === false) {
         // todo: add error message (possibly useless)
     }
+    completeSetup();
     pushToHome();
     return;
 };
