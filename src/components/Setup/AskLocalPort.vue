@@ -1,6 +1,6 @@
 <script setup>
 import { useRouter } from 'vue-router';
-import { pingLocalServer } from '../../services/auth';
+import { pingLocalServer } from '../../services/setup';
 import { ref } from 'vue';
 
 if (await pingLocalServer() === true)
