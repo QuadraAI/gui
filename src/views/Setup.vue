@@ -16,3 +16,10 @@ const isLocal = ref(undefined);
         <AskServerUrl v-else-if="isLocal === false" />
     </div>
 </template>
+
+<style scoped>
+img {
+    max-width: 100px;
+    margin-top: 10px;
+}
+</style>

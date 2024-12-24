@@ -11,11 +11,6 @@ import SignInCard from "../components/SignInCard.vue";
 </template>
 
 <style scoped>
-.login-background {
-    background-color: #f5f3ff;
-    background-size: cover;
-}
-
 img {
   max-width: 100px;
   margin-top: 10px;
