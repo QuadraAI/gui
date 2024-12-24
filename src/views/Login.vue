@@ -16,11 +16,6 @@ import SignInCard from "../components/SignInCard.vue";
     background-size: cover;
 }
 
-h1 {
-    font-size: 24px;
-    font-weight: 400;
-}
-
 img {
   max-width: 100px;
   margin-top: 10px;
