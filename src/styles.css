@@ -26,6 +26,11 @@ body {
     width: 100%;
 }
 
+.login-background {
+    background-color: #f5f3ff;
+    background-size: cover;
+}
+
 .row {
     display: flex;
     justify-content: center;
