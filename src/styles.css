@@ -43,6 +43,9 @@ a:hover {
 
 h1 {
     text-align: center;
+    color: #0f0f0f;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 input,
